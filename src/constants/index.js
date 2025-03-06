@@ -1,7 +1,6 @@
 import {
   mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -15,14 +14,12 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  aicte,
+  veristream,
+  senseisearch,
+  neuronchat,
   threejs,
+  
 } from "../assets";
 
 export const navLinks = [
@@ -42,20 +39,16 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Machine Learning & Deep Learning",
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
+    title: "Full-Stack Development",
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Generative AI & LLMs",
+    icon: mobile,
   },
 ];
 
@@ -116,150 +109,126 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Cloud Virtual Internship",
+    company_name: "AICTE",
+    iconUrl: aicte,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Oct 2024 - Dec 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Completed AWS Academy Cloud Foundations and Cloud Architecting courses.",
+      "Covered essential cloud computing concepts, AWS core services, and architecture design.",
+      "Successfully passed exam to receive Cloud Virtual Internship certificate.",
     ],
   },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "VeriStream",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "An AI-powered content verification tool that leverages NLP, machine learning, and knowledge graphs to analyze and validate information. It integrates Google's Fact-Checking API, Wikipedia API, and Sentence Transformers to ensure credibility, with a Next.js dashboard for visualization.",
     tags: [
       {
-        name: "react",
+        name: "Google Fact-Check API",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Wikipedia API",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Knowledge Graph",
         color: "pink-text-gradient",
       },
+      {
+        name: "Sentence Transformers",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Scikit-learn",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "NLTK",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Next.js",
+        color: "orange-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: veristream,
+    source_code_link: "https://github.com/Roshansingh9/Veristream",
   },
   {
-    name: "Job IT",
+    name: "Sensei Search",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A multimodal AI-powered search engine that enables users to query datasets using text, images, and voice. Built with IBM Granite models and RAG, it enhances search accuracy by integrating LLMs with external knowledge sources. It leverages IBM Watsonx.ai for intelligent responses and Neo4j for knowledge graph-based fact-checking. Designed for businesses, Sensei Search enables faster decision-making and smart information retrieval across diverse domains. The project is deployed as both a web and mobile application using Streamlit.",
     tags: [
       {
-        name: "react",
+        name: "IBM Granite",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Retrieval-Augmented Generation (RAG)",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Neo4j",
         color: "pink-text-gradient",
       },
+      {
+        name: "IBM Watsonx.ai",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Multimodal AI",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "Streamlit",
+        color: "red-text-gradient",
+      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: senseisearch,
+    source_code_link:
+      "https://senseiibmgit-sy6ltck2d5gbmxl89bx9jy.streamlit.app/",
   },
   {
-    name: "Trip Guide",
+    name: "NeuronChat",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A cutting-edge AI chatbot powered by DeepSeek and Dolphin models, designed for intelligent, contextual, and dynamic conversations. NeuronChat offers multimodal interaction, supporting text and voice inputs while leveraging advanced NLP techniques. It integrates Retrieval-Augmented Generation (RAG) for more accurate responses and provides real-time, user-friendly communication via a Streamlit-based web interface.",
     tags: [
       {
-        name: "nextjs",
+        name: "DeepSeek",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Dolphin",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Retrieval-Augmented Generation (RAG)",
         color: "pink-text-gradient",
       },
+      {
+        name: "LLM",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Streamlit",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Multimodal AI",
+        color: "purple-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: neuronchat,
+    source_code_link: "https://github.com/Roshansingh9/NeuronChat-",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

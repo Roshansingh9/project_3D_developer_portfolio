@@ -45,16 +45,18 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I'm a passionate AI & machine learning developer specializing in
+        generative AI, large language models (LLMs), and deep learning. With
+        expertise in frameworks like TensorFlow, PyTorch, and LangChain, I build
+        intelligent, scalable solutions that push the boundaries of AI. From
+        fine-tuning LLMs to deploying real-world AI applications, I love solving
+        complex problems with cutting-edge technology.
+        <span> 𝐹𝑒𝑒𝑙 𝑓𝑟𝑒𝑒 𝑡𝑜 𝑟𝑒𝑎𝑐ℎ 𝑜𝑢𝑡—𝐼’𝑚 𝑎𝑙𝑤𝑎𝑦𝑠 𝑢𝑝 𝑓𝑜𝑟 𝑎 𝑔𝑜𝑜𝑑 𝑐𝑜𝑛𝑣𝑒𝑟𝑠𝑎𝑡𝑖𝑜𝑛!</span>
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
